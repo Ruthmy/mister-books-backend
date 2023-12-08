@@ -2,11 +2,14 @@ source 'https://rubygems.org'
 
 ruby '3.2.2'
 
+# linters
 gem 'rubocop', '>= 1.0', '< 2.0'
-
+# Authetication
 gem 'devise'
-
+# API documentation
 gem 'rswag'
+# n + 1 queries
+gem 'bullet'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.1'

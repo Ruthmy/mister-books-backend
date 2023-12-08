@@ -85,6 +85,9 @@ GEM
     bootsnap (1.17.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bullet (7.1.1)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     capybara (3.39.2)
       addressable
       matrix
@@ -169,6 +172,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.3)
     rack (3.0.8)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -287,6 +292,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.5.0)
+    uniform_notifier (1.16.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.1)
@@ -308,6 +314,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bullet
   capybara
   debug
   devise
@@ -315,6 +322,7 @@ DEPENDENCIES
   jbuilder
   pg (~> 1.1)
   puma (>= 5.0)
+  rack-cors
   rails (~> 7.1.1)
   rspec-rails (~> 6.0.0)
   rswag
