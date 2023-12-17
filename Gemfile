@@ -6,6 +6,10 @@ ruby '3.2.2'
 gem 'rubocop', '>= 1.0', '< 2.0'
 # Authetication
 gem 'devise'
+# For use JWT Tokens
+gem 'devise-jwt'
+# serialize ruby objects in JSON format
+gem 'jsonapi-serializer'
 # API documentation
 gem 'rswag'
 # n + 1 queries
