@@ -10,6 +10,8 @@ gem 'devise'
 gem 'rswag'
 # n + 1 queries
 gem 'bullet'
+# To run Rails as an API, and run a frontend app on a separate domain
+gem 'rack-cors'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.1.1'
