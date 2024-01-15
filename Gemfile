@@ -10,6 +10,8 @@ gem 'devise'
 gem 'devise-jwt'
 # formatting json responses
 gem 'jsonapi-serializer'
+# CORS
+gem 'rack-cors'
 # API documentation
 gem 'rswag'
 # n + 1 queries
