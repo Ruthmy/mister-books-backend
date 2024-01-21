@@ -6,18 +6,17 @@ class Api::V1::LikeCommentsController < ApplicationController
     if @like.save
       render json: { success: true, message: 'You have liked the comment!.' }
     else
-      render json: { success: false, message: "Something is wrong!, you don't liked the post!." }
+      render json: { success: false, message: "Something is wrong! You couldn't like the post!." }
     end
   end
 
   def destroy
-    @comment = Comment.find(params[:comment_id])
-    @like = LikeComment.find_by(comment: @comment, user: current_user)
+    @like = LikeComment.find(params[:id])
 
     if @like.destroy
       render json: { success: true, message: 'You have unliked the comment!.' }
     else
-      render json: { success: false, message: "Something is wrong!, you don't unliked the post!." }
+      render json: { success: false, message: "Something is wrong! You couldn't unlike the post!." }
     end
   end
 end
